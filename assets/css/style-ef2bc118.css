@@ -13782,3 +13782,95 @@ p.pos-a.top-u.left-u.text-21-pc.fw-b.ls-1 {
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
 }
+
+@charset "UTF-8";
+
+.blank {
+  border: 5px solid transparent;
+  animation: blink 1s infinite;
+}
+
+.blank-radius {
+  border-radius: 40px;
+  border: 5px solid transparent;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: red;
+  }
+
+  100% {
+    border-color: transparent;
+  }
+}
+
+.req::after {
+  content: "必須";
+  color: red;
+  font-weight: bold;
+  font-size: 0.8em;
+  margin-left: 0.25em;
+}
+
+/* メディアクエリタグ  小さい幅から大きい幅へ適用*/
+@media screen and (min-width: 2500px) {
+  .mail-size {
+      width: 1250px;
+      --top-u: 40%!important;
+    }
+  .text-16 {
+    font-size: clamp(30rem / var(--baseFontSize), 17rem / var(--baseFontSize) + 4 * (100vw - 375rem / var(--baseFontSize)) / 1065, 16rem / var(--baseFontSize));
+  }
+  .footer-size {
+    font-size: 25px!important;
+    line-height: 30px;
+  }
+
+  .blank-radius {
+    --top-u: 105%!important;
+    border-radius: 80px!important;
+    border: 5px solid transparent;
+    animation: blink 1s infinite;
+  }
+
+  .text-18 {
+    font-size: clamp(30rem / var(--baseFontSize), 16rem / var(--baseFontSize) + 2 * (100vw - 375rem / var(--baseFontSize)) / 1065, 18rem / var(--baseFontSize));
+  }
+
+  .text-20-pc {
+    font-size: clamp(37rem / var(--baseFontSize), 10rem / var(--baseFontSize) + 10 * (100vw - 769rem / var(--baseFontSize)) / 671, 20rem / var(--baseFontSize));
+  }
+
+  .text-33-pc {
+    font-size: clamp(45.5rem / var(--baseFontSize), 16.5rem / var(--baseFontSize) + 16.5 * (100vw - 769rem / var(--baseFontSize)) / 671, 33rem / var(--baseFontSize));
+  }
+
+  .text-24-pc {
+    font-size: clamp(40rem / var(--baseFontSize), 12rem / var(--baseFontSize) + 12 * (100vw - 769rem / var(--baseFontSize)) / 671, 24rem / var(--baseFontSize));
+  }
+
+  .fv-mail {
+    --top-u: 38%!important;
+  }
+  .space-20 {
+    margin-bottom: clamp(30rem / var(--baseFontSize), 10rem / var(--baseFontSize) + 4*(100vw - 769rem / var(--baseFontSize)) / 671, 14rem / var(--baseFontSize));
+  }
+
+  .text-14-2 {
+    font-size: clamp(30rem / var(--baseFontSize), 7rem / var(--baseFontSize) + 7 * (100vw - 769rem / var(--baseFontSize)) / 671, 14rem / var(--baseFontSize));
+  }
+  .fv-size {
+    font-size: 17px !important;
+    line-height: 20px;
+  }
+
+  .text-016 {
+    font-size: clamp(40rem / var(--baseFontSize), 17rem / var(--baseFontSize) + 4 * (100vw - 375rem / var(--baseFontSize)) / 1065, 16rem / var(--baseFontSize));
+  }
+}
