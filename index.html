@@ -44,17 +44,17 @@
     <main>
       <div class="pos-r">
         <form action="mail.php" method="post"
-          class="pos-a w-u right-u sp-right-u sp-left-u sp-ts-x-c top-u sp-w-u sp-top-u"
+          class="pos-a w-u right-u sp-right-u sp-left-u sp-ts-x-c top-u sp-w-u sp-top-u fv-mail"
           style="--right-u:14.5%; --top-u:40%; --w-u:33.5%; --sp-w-u:81%; --sp-left-u:50%; --sp-right-u:initial; --sp-top-u:59%;"
           id="form_top">
           <dl>
             <div class="d-f jc-sb ai-c space-20">
               <dt class="w-26p">
-                <p class="text-16 ls-1 fw-b lh-sm req">都道府県</p>
+                <p class="text-14-2 ls-1 fw-b lh-sm req">都道府県</p>
               </dt>
               <dd class="w-70p h-100p pos-r select-parent">
                 <select name="prefectures"
-                  class="bg-gray2 d-b w-100p text-16 ls-1 h-100p space-10 space-5-2 bd-rd-6 select" required>
+                  class="bg-gray2 d-b w-100p text-14-2 ls-1 h-100p space-10 space-5-2 bd-rd-6 select" required>
                   <option value="" disabled selected style="display:none;">選択してください</option>
                   <option value="北海道">北海道</option>
                   <option value="青森県">青森県</option>
@@ -123,8 +123,8 @@
                 <input type="tel" name="tel" inputmode="numeric" placeholder="xxx-xxxx-xxxx"
                   class="bg-gray2 d-b w-100p text-14-2 ls-1 h-100p space-10 space-5 bd-rd-6" required>
                 <div style="line-height:0.5em;margin-top:4px;">
-                  <small><span style="font-size:10px;">※電話番号の入力間違えにご注意下さい</span></small>
-                  <small><span style="font-size:10px;">※ハイフンを省略しても入力可能です。</span></small>
+                  <small><span class="fv-size" style="font-size:10px;">※電話番号の入力間違えにご注意下さい</span></small>
+                  <small><span class="fv-size" style="font-size:10px;">※ハイフンを省略しても入力可能です。</span></small>
                 </div>
               </dd>
             </div>
@@ -498,16 +498,16 @@
         </picture>
       </div>
       <div class="pos-r">
-        <form action="mail.php" method="post" class="pos-a w-u left-u ts-x-c top-u sp-w-u sp-top-u"
+        <form action="mail.php" method="post" class="pos-a w-u left-u ts-x-c top-u sp-w-u sp-top-u mail-size"
           style="--left-u:50%; --top-u:39%; --w-u:43.5%; --sp-w-u:81%; --sp-top-u:40%;" id="form_bottom">
           <dl>
             <div class="d-f jc-sb ai-c space-20-2">
               <dt class="w-26p">
-                <p class="text-16 ls-1 fw-b lh-sm req">都道府県</p>
+                <p class="text-16 ls-1 fw-b lh-sm req text-016">都道府県</p>
               </dt>
               <dd class="w-70p h-100p pos-r select-parent">
                 <select name="prefectures"
-                  class="bg-gray2 d-b w-100p text-16 ls-1 h-100p space-10 space-5-2 bd-rd-6 select" required>
+                  class="bg-gray2 d-b w-100p text-16 ls-1 h-100p space-10 space-5-2 bd-rd-6 select text-016" required>
                   <option value="" disabled selected style="display:none;">選択してください</option>
                   <option value="北海道">北海道</option>
                   <option value="青森県">青森県</option>
@@ -561,66 +561,66 @@
             </div>
             <div class="d-f jc-sb ai-c space-20-2">
               <dt class="w-26p">
-                <p class="text-16 ls-1 fw-b lh-sm req">市町村</p>
+                <p class="text-16 ls-1 fw-b lh-sm req text-016">市町村</p>
               </dt>
               <dd class="w-70p h-100p">
                 <input type="text" name="city" placeholder="入力してください"
-                  class="bg-gray2 d-b w-100p text-16 ls-1 h-100p space-10 space-5-2 bd-rd-6" required>
+                  class="bg-gray2 d-b w-100p text-16 ls-1 h-100p space-10 space-5-2 bd-rd-6 text-016" required>
               </dd>
             </div>
             <div class="d-f jc-sb ai-c space-20-2">
               <dt class="w-26p">
-                <p class="text-16 ls-1 fw-b lh-sm req">電話番号</p>
+                <p class="text-16 ls-1 fw-b lh-sm req text-016">電話番号</p>
               </dt>
               <dd class="w-70p h-100p">
                 <input type="tel" name="tel" inputmode="numeric" placeholder="xxx-xxxx-xxxx"
-                  class="bg-gray2 d-b w-100p text-16 ls-1 h-100p space-10 space-5-2 bd-rd-6" required>
+                  class="bg-gray2 d-b w-100p text-16 ls-1 h-100p space-10 space-5-2 bd-rd-6 text-016" required>
                 <div style="line-height:0.5em;margin-top:4px;">
-                  <small><span style="font-size:10px;">※電話番号の入力間違えにご注意下さい</span></small>
-                  <small><span style="font-size:10px;">※ハイフンを省略しても入力可能です。</span></small>
+                  <small><span class="footer-size" style="font-size:10px;">※電話番号の入力間違えにご注意下さい</span></small>
+                  <small><span class="footer-size" style="font-size:10px;">※ハイフンを省略しても入力可能です。</span></small>
                 </div>
               </dd>
             </div>
             <div class="d-f jc-sb ai-c space-20-2">
               <dt class="w-26p">
-                <p class="text-16 ls-1 fw-b lh-sm req">日中連絡手段</p>
+                <p class="text-16 ls-1 fw-b lh-sm req text-016">日中連絡手段</p>
               </dt>
               <dd class="w-70p h-100p">
                 <fieldset class="d-f ai-c gap-6p pl-xs" id="contact-method">
                   <label for="check4" class="d-f ai-c crs-p"><input id="check4" name="method_contact" value="tel"
-                      type="radio" required><span class="text-16 ls-1 d-b fw-b">電話</span></label>
+                      type="radio" required><span class="text-16 ls-1 d-b fw-b text-016">電話</span></label>
                   <label for="check5" class="d-f ai-c crs-p"><input id="check5" name="method_contact" value="mail"
-                      type="radio" required><span class="text-16 ls-1 d-b fw-b">メール</span></label>
+                      type="radio" required><span class="text-16 ls-1 d-b fw-b text-016">メール</span></label>
                   <label for="check6" class="d-f ai-c crs-p"><input id="check6" name="method_contact" value="line"
-                      type="radio" required><span class="text-16 ls-1 d-b fw-b">LINE</span></label>
+                      type="radio" required><span class="text-16 ls-1 d-b fw-b text-016">LINE</span></label>
                 </fieldset>
               </dd>
             </div>
             <div class="d-f jc-sb ai-c space-20-2">
               <dt class="w-26p">
-                <p class="text-16 ls-1 fw-b lh-sm">メール</p>
+                <p class="text-16 ls-1 fw-b lh-sm text-016">メール</p>
               </dt>
               <dd class="w-70p h-100p">
                 <input type="email" name="Email" placeholder="exmple@example.com(任意)"
-                  class="bg-gray2 d-b w-100p text-16 ls-1 h-100p space-10 space-5-2 bd-rd-6">
+                  class="bg-gray2 d-b w-100p text-16 ls-1 h-100p space-10 space-5-2 bd-rd-6 text-016">
               </dd>
             </div>
             <div class="d-f jc-sb ai-c space-20-2">
               <dt class="w-26p">
-                <p class="text-16 ls-1 fw-b lh-sm req">お名前</p>
+                <p class="text-16 ls-1 fw-b lh-sm req text-016">お名前</p>
               </dt>
               <dd class="w-70p h-100p">
                 <input type="text" name="name" placeholder="リフォーム太郎"
-                  class="bg-gray2 d-b w-100p text-16 ls-1 h-100p space-10 space-5-2 bd-rd-6" required>
+                  class="bg-gray2 d-b w-100p text-16 ls-1 h-100p space-10 space-5-2 bd-rd-6 text-016" required>
               </dd>
             </div>
             <div class="d-f jc-sb ai-c space-20-2">
               <dt class="w-26p">
-                <p class="text-16 ls-1 fw-b lh-sm">お問合わせ内容</p>
+                <p class="text-16 ls-1 fw-b lh-sm text-016">お問合わせ内容</p>
               </dt>
               <dd class="w-70p h-100p">
                 <textarea name="message" placeholder="例）トイレをウォシュレット対応にリフォームしたい（任意）"
-                  class="bg-gray2 d-b w-100p text-16 ls-1 h-100p space-10 space-5-2 bd-rd-6"></textarea>
+                  class="bg-gray2 d-b w-100p text-16 ls-1 h-100p space-10 space-5-2 bd-rd-6 text-016"></textarea>
               </dd>
             </div>
           </dl>
